@@ -5,8 +5,7 @@ import motor.motor_asyncio
 from pymongo import MongoClient
 import pymongo
 
-# client = MongoClient('mongodb+srv://admin:Mw2RlLKKStf0JVxi@cluster0.zbuzx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
-client = motor.motor_asyncio.AsyncIOMotorClient('mongodb+srv://admin:Mw2RlLKKStf0JVxi@cluster0.zbuzx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+client = motor.motor_asyncio.AsyncIOMotorClient('mongodb+srv://<username>:<password>@cluster0.zbuzx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 database = client.TodoList
 collection = database.todo
 
